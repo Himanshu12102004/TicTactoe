@@ -19,8 +19,10 @@ function CopyButton({ textToCopy }) {
     );
     const whatsappURL = `whatsapp://send?text=${message}`;
 
-    window.location.href = whatsappURL;
+    // Open WhatsApp in a new tab or window
+    window.open(whatsappURL, "_blank");
   };
+
   return (
     <div className="copyAndShare">
       <div onClick={handleCopyClick}>
@@ -31,11 +33,7 @@ function CopyButton({ textToCopy }) {
         />
       </div>
       <div className="share">
-        <img
-          src={share}
-          style={{ height: "22px", display: "none" }}
-          onClick={send}
-        ></img>
+        <img src={share} style={{ height: "22px" }} onClick={send}></img>
       </div>
     </div>
   );
