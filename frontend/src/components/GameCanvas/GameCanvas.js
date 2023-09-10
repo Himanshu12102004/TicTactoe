@@ -17,6 +17,7 @@ function GameCanvas(props) {
   const [myCanvas, setMyCanvas] = useState("");
   const [confirmationInitiated, setConfirmationInitiated] = useState(false);
   useEffect(() => {
+    console.log(gameCounter);
     if (gameCounter % 2 === 0) {
       if (props.mySymbol === "X") {
         setChance(true);

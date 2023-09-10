@@ -58,56 +58,62 @@ function App() {
     mySocket.on("connect", () => {
       setTimeout(() => {
         loading({ left: "Load", right: "ing..." }, false);
-      }, 700);
+      }, 100);
 
       console.log("connect");
       setSocket(mySocket);
     });
     mySocket.on("disconnect", () => {});
-    mySocket.on("opponentJoined", (data) => {
-      setMySymbol("X");
-      setOpponent(data.user);
-      loading(
-        {
-          left: (
-            <>
-              <span
-                style={{
-                  fontSize: "1.3rem",
-                  color: "rgb(0,255,0)",
-                  paddingRight: "0.5rem",
-                }}
-              >
-                {name.length > 8 ? name.substring(0, 8) + "..." : name}
-              </span>
-              <span style={{ fontSize: "2rem", color: "white" }}> V</span>
-            </>
-          ),
-          right: (
-            <>
-              <span style={{ fontSize: "2rem", color: "white" }}> S</span>
-              <span
-                style={{
-                  fontSize: "1.3rem",
-                  color: "red",
-                  paddingLeft: "0.5rem",
-                }}
-              >
-                {data.user.length > 8
-                  ? data.user.substring(0, 8) + "..."
-                  : data.user}
-              </span>
-            </>
-          ),
-        },
-        true
-      );
-      setTimeout(() => {
-        loading({ left: null, right: null }, false);
-        setGameStarted(true);
-      }, 2000);
-    });
-  }, [name]);
+  }, []);
+
+  useEffect(() => {
+    if (socket) {
+      socket.on("opponentJoined", (data) => {
+        console.log(name);
+        setMySymbol("X");
+        setOpponent(data.user);
+        loading(
+          {
+            left: (
+              <>
+                <span
+                  style={{
+                    fontSize: "1.3rem",
+                    color: "rgb(0,255,0)",
+                    paddingRight: "0.5rem",
+                  }}
+                >
+                  {name.length > 8 ? name.substring(0, 8) + "..." : name}
+                </span>
+                <span style={{ fontSize: "2rem", color: "white" }}> V</span>
+              </>
+            ),
+            right: (
+              <>
+                <span style={{ fontSize: "2rem", color: "white" }}> S</span>
+                <span
+                  style={{
+                    fontSize: "1.3rem",
+                    color: "red",
+                    paddingLeft: "0.5rem",
+                  }}
+                >
+                  {data.user.length > 8
+                    ? data.user.substring(0, 8) + "..."
+                    : data.user}
+                </span>
+              </>
+            ),
+          },
+          true
+        );
+        setTimeout(() => {
+          loading({ left: null, right: null }, false);
+          setGameStarted(true);
+        }, 2000);
+      });
+    }
+  }, [name, socket]);
   return (
     <>
       {gates
