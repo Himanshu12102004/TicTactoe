@@ -31,8 +31,8 @@ mongoose
     console.log(err.message);
   });
 const server = http.createServer(app);
-server.listen(port, ip, () => {});
-const io = require("socket.io")(server, { cors: { origin: "*" } });
+// server.listen(port, ip, () => {});
+const io = require("socket.io")(port, { cors: { origin: "*" } });
 io.on("connect", (socket) => {
   // console.log(socket);
   socket.on("register", (data, cb) => {
