@@ -46,7 +46,7 @@ function App() {
   };
   useEffect(() => {
     const connectingToserverText = leftRight("Connecting To Servers");
-    const mySocket = io("http://192.168.141.180:3002");
+    const mySocket = io("https://tictactoe-omhh.onrender.com");
     if (!socket) loading(connectingToserverText, true);
     window.addEventListener("beforeunload", function (e) {
       // if (gameStarted)
