@@ -31,7 +31,11 @@ function CopyButton({ textToCopy }) {
         />
       </div>
       <div className="share">
-        <img src={share} style={{ height: "22px" }} onClick={send}></img>
+        <img
+          src={share}
+          style={{ height: "22px", display: "none" }}
+          onClick={send}
+        ></img>
       </div>
     </div>
   );
