@@ -1,0 +1,23 @@
+.ticTacToeImage {
+  height: 15rem;
+  border-radius: 30px;
+}
+.imgContainer {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+  border-radius: 30px;
+  /* overflow: hidden; */
+  width: fit-content;
+}
+.formAndWelcome {
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}

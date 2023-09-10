@@ -1,0 +1,8 @@
+.copyAndShare {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+  height: fit-content;
+  font-size: 1rem;
+}

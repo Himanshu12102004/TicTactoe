@@ -1,0 +1,68 @@
+.name-label {
+  font-size: 3rem;
+  align-self: flex-start;
+  color: white;
+  background: linear-gradient(45deg, #f06, #3cf);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: 0.31s ease-in-out;
+  font-size: 2rem;
+  /* padding: 0 1.6rem; */
+  font-family: "Rubik Iso", cursive;
+  text-align: left;
+  display: block;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
+}
+.name {
+  align-self: left;
+  margin-top: 0.4rem;
+  background-color: black;
+  height: 2rem;
+  width: 250px;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  color: rgb(213, 120, 46);
+  border: rgb(213, 120, 46) solid 2px;
+  font-family: "Rubik Iso", cursive;
+  padding: 3px 2px;
+}
+.name:focus {
+  outline: none;
+}
+.submit {
+  border: none;
+
+  box-shadow: -1px -1px 2px #e60073, /* Top ( #e60073) */ -1px 0 10px #e60073,
+    /* Left ( #e60073) */ 1px 0 10px #e60073,
+    /* Right ( #e60073) */ 0 1px 10px #e60073;
+  background-color: black;
+
+  color: white;
+  background: linear-gradient(45deg, #f06, #3cf);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: 0.31s ease-in-out;
+  font-family: "Rubik Iso", cursive;
+  color: #3cf;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  padding: 3px 2rem;
+  width: 15rem;
+  border-radius: 10px;
+}
+.err {
+  align-self: flex-start;
+  padding: 0.5rem 0rem;
+  width: 100%;
+  background-color: rgba(69, 69, 69, 0.4);
+  border-radius: 3px;
+  color: red;
+  font-family: "Rubik Iso", cursive;
+  margin-bottom: 0rem;
+}

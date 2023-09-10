@@ -1,0 +1,115 @@
+.options {
+  /* background-color: black; */
+  font-family: "Rubik Iso", cursive;
+  text-align: center;
+  background: linear-gradient(45deg, #f06, #3cf);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: 0.31s ease-in-out;
+  font-size: 1.5rem;
+  padding: 5px 1.2rem;
+  border: none;
+  box-shadow: -1px -1px 2px #e60073, -1px 0 10px #e60073, 1px 0 10px #e60073,
+    0 1px 10px #e60073;
+  border-radius: 10px;
+  gap: 1rem;
+  width: 250px;
+  margin-bottom: 1rem;
+}
+.optionBox {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 0rem;
+}
+.input {
+  /* align-self: left; */
+  text-align: center;
+  margin-top: 0.4rem;
+
+  background-color: black;
+  /* box-shadow: -1px -1px 2px rgb(213, 120, 46),
+     -1px 0 10px rgb(213, 120, 46),
+     1px 0 10px rgb(213, 120, 46),
+   0 1px 10px rgb(213, 120, 46); */
+  height: 2rem;
+  width: 250px;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  color: rgb(213, 120, 46);
+  border: rgb(213, 120, 46) solid 2px;
+  font-family: "Rubik Iso", cursive;
+  padding: 5px 2px;
+}
+.Join {
+  background-color: #e60073;
+}
+.disJoin {
+  background-color: black;
+}
+.err {
+  align-self: flex-start;
+  padding: 0.5rem 0rem;
+  width: 100%;
+  background-color: rgba(69, 69, 69, 0.4);
+  border-radius: 3px;
+  color: red;
+  width: 260px;
+  align-self: center;
+  font-family: "Rubik Iso", cursive;
+  margin-bottom: 1rem;
+}
+.name {
+  /* background-color: black; */
+  font-family: "Rubik Iso", cursive;
+  text-align: center;
+  background: linear-gradient(45deg, #3cf, #3cf);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: 0.31s ease-in-out;
+  font-size: 1.5rem;
+  padding: 0rem 0rem 2rem 0rem;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.roomCodeSent {
+  box-sizing: border-box;
+  align-self: left;
+  text-align: center;
+  margin-top: 0.5rem;
+  height: 2.5rem;
+  margin-bottom: 0.5rem;
+  background-color: black;
+  /* box-shadow: -1px -1px 2px rgb(213, 120, 46),
+     -1px 0 10px rgb(213, 120, 46),
+     1px 0 10px rgb(213, 120, 46),
+   0 1px 10px rgb(213, 120, 46); */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  width: 250px;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  color: rgb(213, 120, 46);
+  border: rgb(213, 120, 46) solid 2px;
+  font-family: "Rubik Iso", cursive;
+  /* padding: 5px 2px; */
+  margin-bottom: 1.2rem;
+}
+.friend {
+  /* background-color: black; */
+  font-family: "Rubik Iso", cursive;
+  background: linear-gradient(45deg, #3cf, #3cf);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: 0.31s ease-in-out;
+  font-size: 1.3rem;
+  padding: 0rem 0rem 0rem 0rem;
+  border: none;
+  border-radius: 10px;
+}
