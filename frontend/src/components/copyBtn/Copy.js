@@ -15,7 +15,7 @@ function CopyButton({ textToCopy }) {
   };
   const send = () => {
     const message = encodeURIComponent(
-      `Play Tic-Tac-Toe with me only on http://192.168.141.180:3000. Enter this room code ${textToCopy} `
+      `Play Tic-Tac-Toe with me only on https://tictactoe-himanshu.onrender.com/. Enter this room code ${textToCopy} `
     );
     const whatsappURL = `whatsapp://send?text=${message}`;
 
